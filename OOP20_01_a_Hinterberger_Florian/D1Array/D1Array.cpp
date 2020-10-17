@@ -4,15 +4,15 @@
 #include <iterator>
 
 using namespace std;
-const size_t ELEMENTS = 24;
+const size_t ELEMENTS = 23;
 
-void coutArray(const array<double, ELEMENTS>& input)
+void coutArray(const array<double, ELEMENTS> & input)
 {
 	int column = 0;
 	
 	for(auto iter = input.begin(); iter != input.end(); ++iter)
 	{
-		cout << setprecision(4) << *iter << "\t";
+		cout << setprecision(5) << *iter << "\t";
 		if ((++column) == 4)
 		{
 			cout << "\n";
@@ -21,23 +21,8 @@ void coutArray(const array<double, ELEMENTS>& input)
 	}
 }
 
-
-
-
-
 int main()
 {
-	//Old way
-	/*
-	double old_arr[ELEMENTS] = { 0 };
-	for (size_t i = 0; i < sizeof(old_arr)/sizeof(double); i++)
-	{
-		old_arr[i] = (i+1) * 0.345678;
-	}
-	*/
-
-	//new and better way
-
 	array <double, ELEMENTS> class_arr;
 	class_arr.fill(0);
 
