@@ -1,0 +1,4 @@
+﻿  LIFO.cpp
+C:\Users\minem\Desktop\FH\OOP\OOP20_02_a_Hinterberger_Florian\LIFO\LIFO.cpp(122,23): warning C4838: Konvertierung von "int" zu "unsigned long" erfordert eine einschränkende Konvertierung
+C:\Users\minem\Desktop\FH\OOP\OOP20_02_a_Hinterberger_Florian\LIFO\LIFO.cpp(122,31): warning C4838: Konvertierung von "long" zu "unsigned long" erfordert eine einschränkende Konvertierung
+  LIFO.vcxproj -> C:\Users\minem\Desktop\FH\OOP\OOP20_02_a_Hinterberger_Florian\LIFO\Debug\LIFO.exe
