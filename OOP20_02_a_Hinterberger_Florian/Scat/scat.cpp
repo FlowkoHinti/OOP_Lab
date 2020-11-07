@@ -69,9 +69,7 @@ public:
 		for (size_t karten_ind = 0; karten_ind < STAPEL; ++karten_ind)
 		{
 			rand_ind = distribution(generator);
-			auto save_ptr = deck[karten_ind];
-			deck[karten_ind] = deck[rand_ind];
-			deck[rand_ind] = save_ptr;
+			swap(deck[karten_ind], deck[rand_ind]);
 		}
 	}
 };
