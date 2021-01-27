@@ -3,21 +3,22 @@
 
 int main(int argc, char* argv[])
 {
+
+	Konto* k = new Konto("abc", 123);
+	k->Kontoauszug();
+
 	Kontoverwaltung Konten;
 
-	Konten.Kontos_laden("kontoverwaltung_08_11_2020-16_09.txt");
-	auto konto_1 = Konten.getKontoByName("David Maerzendorfer");
-	konto_1->Kontoauszug();
-	auto konto_2 = Konten.getKontoByName("Florian Hinterberger");
-	konto_2->Kontoauszug();
+	//Konten.Kontos_laden("kontoverwaltung_12_11_2020-19_08.txt");
 
-	auto konto_3 = Konten.getKontoByName("dsds");
-	konto_3->Kontoauszug();
+	Konten.Kontoeroeffnung("Dave Marchenvillager");
+	Konten.Kontoeroeffnung("Flow to the Mic Check");
+	Konten.Kontoeroeffnung("R J Duke");
 
-	konto_1->Abheben(-333);
-	konto_2->Einzahlen(-122);
-	konto_1->Abheben(12);
-	konto_2->Einzahlen(22);
+	shared_ptr<Konto> d_konto = Konten.getKontoByName("Dave Marchenvillager");
+	shared_ptr<Konto> f_konto = Konten.getKontoByName("Flow to the Mic Check");
+	shared_ptr<Konto> r_konto = Konten.getKontoByName("R J Duke");
 
-	Konten.Kontos_speichern();
+	Konten.Kontos_laden("kontoverwaltung_13_11_2020-11_08.txt");
+	
 }

@@ -1,0 +1,2 @@
+C:\Users\minem\Desktop\FH\OOP\OOP20_06_Maerzendorfer_Hinterberger\RectangleArea\Debug\RectangleArea.exe
+C:\Users\minem\Desktop\FH\OOP\OOP20_06_Maerzendorfer_Hinterberger\RectangleArea\Debug\RectangleArea.pdb
